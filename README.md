@@ -1,0 +1,2 @@
+# mvdm-htmlcss-barebone
+This is a completely empty, style-free barebone HTML5/CSS-template. Feel free to use this for future projects. Also check out my React/ReactRouter and WordPress barebone templates.

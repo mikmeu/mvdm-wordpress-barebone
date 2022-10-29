@@ -1,0 +1,336 @@
+/*
+Theme Name: MvdM Barebone WordPress template
+Theme URI: https://mvdm.media
+Author: MvdM Media
+Author URI: https://mvdm.media
+Description: A barebone, unstyled WordPress template free to use for your next WordPress project.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+body, html {
+    margin:0;
+    padding:0;
+    font-family:'Open Sans',sans-serif;
+}
+* {
+    box-sizing: border-box;
+  }
+
+/* OVERALL STYLES */
+.btn {
+
+}
+.mobile-view {
+    display:none;
+}
+/* MESSAGE STYLES */
+.message {
+    padding:10px;
+    font-size:15px;
+    margin-bottom:10px;
+    border-radius:10px;
+}
+.message-icon {
+    width:20px;
+    float:left;
+    margin-right:10px;
+}
+.message-error {
+    border:1px solid #3f0001;
+    background:#e96d6f;
+    color:#3f0001;
+}
+.message-check {
+    border:1px solid #012a00;
+    background:#90ec8f;
+    color:#012a00;
+}
+.message-info {
+    border:1px solid #000b35;
+    background:#3d79f1;
+    color:#000b35;
+}
+.message-close-icon {
+    float:right;
+    width:20px;
+}
+/* HEADER */
+.top-header {
+
+}
+.logo-container {
+
+}
+.nav-container {
+
+}
+
+/* NAVIGATION */
+.nav-list {
+
+}
+.nav-list li {
+
+}
+.nav-list li a {
+
+}
+.nav-list li a:hover {
+
+}
+.nav-list li a.active {
+
+}
+.nav-icon {
+    width:25px;
+    cursor: pointer;
+}
+/* MOBILE MENU */ 
+.mobile-menu-close {
+    cursor: pointer;
+}
+.mobile-menu-close-icon {
+    width:20px;
+    float:left;
+}
+.mobile-nav-icon {
+    width:25px;
+    cursor: pointer;
+}
+.mobile-menu {
+
+}
+.mobile-nav-list {
+
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 1em;
+}
+.grid-six {
+    grid-template-columns: repeat(6, 1fr);
+}
+.grid-five {
+    grid-template-columns: repeat(5, 1fr);
+}
+.grid-four {
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-three {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-two {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cell-span-two-start {
+    grid-column-start:1;
+    grid-column-end:3;
+}
+.grid-cell-span-three-start {
+    grid-column-start:1;
+    grid-column-end:4;
+}
+
+/* FORM STYLES */
+.form {
+
+}
+.form-row {
+
+}
+.form-col {
+
+}
+.form-input {
+
+}
+.form-select {
+
+}
+.form-textarea {
+
+}
+.form-btn {
+
+}
+
+/* PAGE STYLES */
+.page h1 {
+
+}
+.page h2 {
+
+}
+.page .overline {
+    margin-bottom:-20px;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+/* ITEMS */
+.item-container {
+
+}
+.item {
+}
+.item-inner {
+
+}
+.item-title {
+
+}
+.item-body {
+
+}
+.item-meta {
+
+}
+.item-thumbnail {
+
+}
+
+/* CONTENT STYLES (INHERITS PAGE STYLES) */
+/* - CONTENT HEADING */
+.content h1 {
+
+}
+.content h2 {
+
+}
+.content h3 {
+
+}
+.content h4 {
+
+}
+.content h5 {
+
+}
+/* - CONTENT PARAGRAPH */
+.content p {
+
+}
+.content p a {
+
+}
+.content p a:hover {
+
+}
+/* - CONTENT LIST */
+.content ul, .content ol {
+
+}
+.content li {
+
+}
+/* - CONTENT TABLE */
+.content table {
+
+}
+.content tr {
+
+}
+.content td, .content th {
+
+}
+.content th {
+
+}
+/* - CONTENT MISC */
+.content blockquote {
+    font-style:italic;
+}
+.content iframe {
+    max-width:100%;
+}
+.content img {
+    display:block;
+    max-width:100%;
+}
+.content code {
+    border:1px solid #333;
+    font-family:"Consolas",serif;
+    font-size:12px;
+    border-radius:5px;
+    padding:2px;
+
+}
+.content code.code-block {
+    display:block;
+    background:#222;
+    color:#FFFFFD;
+    margin-bottom:10px;
+    padding:10px;
+    border-left:10px solid #999;
+    border-radius:0px;
+    line-height:150%;
+    width:500px;
+    max-width:100%;
+}
+.content .caption {
+    font-size:10px;
+    font-style:italic;
+}
+
+/* FOOTER */
+.footer {
+
+}
+@media screen and (max-width:900px) {
+    .grid-six {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-five {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width:719px) {
+    .grid-six {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-five {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-four{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-three {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-cell-span-three-start {
+        grid-column-start:1;
+        grid-column-end:3;
+    }
+    .mobile-hide {
+        display:none;
+    }
+    .mobile-view {
+        display:block;
+    }
+}
+@media screen and (max-width:400px) {
+    .grid-six {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-five {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-four{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-three {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-two {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-cell-span-three-start, .grid-cell-span-two-start {
+        grid-column-start:1;
+        grid-column-end:2;
+    }
+}
