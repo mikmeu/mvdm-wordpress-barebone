@@ -1,5 +1,7 @@
 <?php 
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'custom-logo' );
+
 function mytheme_register_nav_menu(){
     register_nav_menus( array( 'mainmenu' => 'mainmenu' ) );
     register_nav_menus( array( 'mobilemenu' => 'mobilemenu' ) );

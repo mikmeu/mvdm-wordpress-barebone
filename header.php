@@ -16,22 +16,26 @@
     <body>
         <div class="mobile-menu-container" style="display:none;" id="mobileMenu">
             <nav class="mobile-menu">
-                <div class="mobile-menu-close" onclick="CloseMobileMenu()"><img src="icons/icons_close.svg" class="mobile-menu-close-icon" /> Close Menu</div>
+                <div class="mobile-menu-close" onclick="CloseMobileMenu()"><img src="<?php echo get_template_directory_uri(); ?>/icons/icons_close.svg" class="mobile-menu-close-icon" /> Close Menu</div>
                 <?php wp_nav_menu(['theme_location'=>'mobilemenu','menu_class'=>'mobile-nav-list']); ?>
             </nav>
         </div>
         <header class="top-header">
             <div class="logo-container">
                 <div class="logo">
-                    <img src="https://via.placeholder.com/150.png" class="logo-image" title="Site name" alt="Site Name" />
+                    <?php $custom_logo_id = get_theme_mod( 'custom_logo' );
+                    $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                    if ( has_custom_logo() ) {
+                        echo '<img class="logo-imaeg" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+                    }?>
                 </div>
-                <h1 class="site-title">Site title</h1>
+                <h1 class="site-title"><?php bloginfo('name') ?></h1>
             </div>
             <div class="nav-container">
                 <nav class="nav">
                     <?php wp_nav_menu(['theme_location'=>'mainmenu','menu_class'=>'nav-list mobile-hide']); ?>
                     <ul class="nav-list mobile-view">
-                        <li><img src="icons/icons_menu.svg" class="nav-icon" onclick="OpenMobileMenu()" /></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/icons/icons_menu.svg" class="nav-icon" onclick="OpenMobileMenu()" /></li>
                     </ul>
                 </nav>
             </div>
